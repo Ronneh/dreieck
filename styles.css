@@ -1,0 +1,137 @@
+﻿body {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+header {
+    background-color: lightcoral;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    header nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+            header nav ul li a {
+                color: white;
+                text-decoration: none;
+            }
+
+.content {
+    padding: 20px;
+}
+
+.text-block {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.triangle-body {
+    display: flex;
+    position: relative;
+    width: 400px;
+    height: 280px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 40px auto;
+    justify-content: center;
+}
+
+.triangle-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: auto auto;
+}
+
+.triangle-outside {
+    position: relative;
+    width: 340px;
+    height: 250px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 250px solid rgba(255, 182, 193, 0.5);
+    border-top: 0 solid transparent;
+    top: 0;
+    left: 0;
+}
+
+.slider {
+    position: absolute;
+    width: 150px;
+    transform-origin: center;
+    display: flex;
+    align-items: center;
+}
+
+.cost-slider {
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+}
+
+.time-slider {
+    top: 70%;
+    left: 0;
+    transform: translateY(-100%) rotate(-35deg);
+}
+
+.quality-slider {
+    top: 70%;
+    left: 50%;
+    transform: translateY(-100%) rotate(215deg);
+}
+
+.center-score {
+    position: absolute;
+    top: 52.5%;     /* So ist das Label genau in der Mitte zwischen den Reglern */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.label {
+    position: absolute;
+    font-weight: bold;
+}
+
+.top-label {
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bottom-left-label {
+    bottom: -20px;
+    left: 0;
+}
+
+.bottom-right-label {
+    bottom: -20px;
+    right: 0;
+}

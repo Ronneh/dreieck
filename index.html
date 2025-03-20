@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magisches Dreieck</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Header Platzhalter</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#triangle">Magisches Dreieck</a></li>
+                <li><a href="#netdiagram">Netzdiagramm</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="text-block">
+        <h1>Blablabla</h1>
+        <p>Hier steht ein Text blablablabla und hier sieht man das Dreieck:</p>
+    </div>
+    <div class="triangle-body">
+        <div class="triangle-outside">
+            <div class="label top-label">Kosten</div>
+            <div class="label bottom-left-label">Zeit</div>
+            <div class="label bottom-right-label">Qualität</div>
+
+            <div class="triangle-container">
+                <div class="triangle"></div>
+                <div class="slider cost-slider">
+                    <!--<label for="cost-slider">Kosten</label>-->
+                    <input type="range" id="cost-slider" min="0" max="100" value="33">
+                </div>
+                <div class="slider time-slider">
+                    <!--<label for="time-slider">Zeit</label>-->
+                    <input type="range" id="time-slider" min="0" max="100" value="33">
+                </div>
+                <div class="slider quality-slider">
+                    <!--<label for="quality-slider">Qualität</label>-->
+                    <input type="range" id="quality-slider" min="0" max="100" value="33">
+                </div>
+                <div class="center-score" id="center-score">100</div>
+            </div>
+        </div>
+    </div>
+    <div class="text-block">
+        <h2>Idee</h2>
+        <p>Hier kommt dann ein weiterer Text...</p>
+    </div>
+    <div class="text-block">
+        <h2>Vor- und Nachteile</h2>
+        <p>Hier kommt dann ein Text mit Vor- und Nachteilen...</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
